@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/test-setup.ts","./src/app/App.test.tsx","./src/app/App.tsx","./src/components/TrafficChart.tsx","./src/hooks/useTheme.ts","./src/layouts/Layout.tsx","./src/pages/AnalysisPage.tsx","./src/pages/Dashboard.tsx","./src/pages/DataManagement.tsx","./src/pages/GenericPage.tsx","./src/services/api.ts"],"errors":true,"version":"5.8.3"}

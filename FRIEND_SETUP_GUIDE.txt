@@ -1,0 +1,40 @@
+TRAFFIQ - FRIEND SETUP GUIDE (WINDOWS)
+
+BEFORE YOU START
+- Extract the ZIP fully; do not run files from inside the ZIP preview.
+- Install Python 3.11 or 3.12 (recommended) and Node.js 20 LTS or newer.
+- During Python installation, enable Add Python to PATH.
+- Internet is required for first-time package installation.
+
+FIRST-TIME SETUP
+1. Right-click the ZIP and choose Extract All.
+2. Open the extracted TrafficIQ folder.
+3. Double-click SETUP_TRAFFIQ.bat and wait for SETUP COMPLETED SUCCESSFULLY.
+4. Double-click START_TRAFFIQ.bat.
+5. Keep both service terminal windows open.
+6. Open http://localhost:5173
+
+CHECKS
+- API docs: http://localhost:8000/docs
+- API health: http://localhost:8000/api/v1/health
+
+EVERYDAY USE
+- After first setup, run START_TRAFFIQ.bat each time.
+- Do not run setup every time.
+- To stop, press Ctrl+C in each service terminal or close those windows.
+
+IMPORTANT
+- The default local setup uses SQLite and creates an EMPTY database.
+- No sample traffic, fake visitors, or synthetic forecasts are included.
+- Import genuine CSV data with required columns timestamp,visitors.
+  Optional columns: sessions,page_views.
+- PostgreSQL requires separate configuration; the default BAT setup uses SQLite.
+- Do not share a personal backend/.env file or database.
+- Close other apps using ports 8000 or 5173 before starting TrafficIQ.
+- If setup fails, capture the full error. If the browser is blank, press F12,
+  open Console, refresh, and capture any red errors.
+
+PROJECT STATUS
+Read docs/technical/IMPLEMENTATION_STATUS.md. This is a local academic
+development build, not a production-ready multi-user service. Verify each
+feature before claiming it is complete.

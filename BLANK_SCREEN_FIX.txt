@@ -1,0 +1,14 @@
+TRAFFIQ BLANK SCREEN FIX
+
+This package fixes the Dashboard icon crash (`Activity is not defined`) by importing and using the Activity icon directly.
+
+If you are replacing an older copy:
+1. Stop old TrafficIQ terminal windows with Ctrl+C.
+2. Extract this NEW ZIP into a new folder (do not merge with the old folder).
+3. Run SETUP_TRAFFIQ.bat and wait for SETUP COMPLETED SUCCESSFULLY.
+4. Run START_TRAFFIQ.bat. Keep the API and frontend windows open.
+5. Open http://localhost:5173 and press Ctrl+F5 once.
+
+If it is still blank, press F12 > Console and send a screenshot of the FIRST red error. Also check http://localhost:8000/api/v1/health.
+
+The database starts empty by design. The dashboard will not show visitor metrics until real CSV data is imported.

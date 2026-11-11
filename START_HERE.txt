@@ -1,0 +1,26 @@
+TRAFFIQ - WINDOWS QUICK START
+
+The screenshots previously showed a separate TrafficCalculus project running on
+port 8000. Close that older app's terminal before starting TrafficIQ.
+
+1. Extract this ZIP to a writable folder (example: C:\Projects\TrafficIQ).
+2. Install Python 3.11+ and Node.js 20+.
+3. Run SETUP_TRAFFIQ.bat once. Wait for SETUP COMPLETED SUCCESSFULLY.
+4. Run START_TRAFFIQ.bat whenever you want to use the app.
+5. Keep both TrafficIQ terminal windows open.
+
+Frontend: http://localhost:5173
+API docs: http://localhost:8000/docs
+API health: http://localhost:8000/api/v1/health
+
+The default local database is SQLite. Setup creates an empty database only.
+It does not generate or import mock traffic. Import your own genuine CSV:
+timestamp,visitors
+Optional columns: sessions,page_views
+Prefer ISO-8601 timestamps with timezone offsets.
+
+If startup reports port 8000 is occupied, close the old TrafficCalculus
+terminal/window and retry. Do not run the two projects on the same port.
+
+This is a local academic development build, not a production-secured
+multi-user service. See docs/technical/IMPLEMENTATION_STATUS.md.

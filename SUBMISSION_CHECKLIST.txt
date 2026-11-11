@@ -1,0 +1,27 @@
+TRAFFIQ - FINAL SUBMISSION CHECKLIST
+
+Included in this package
+- Source code: frontend and backend
+- Academic report draft: DOCX, PDF and editable Markdown
+- Presentation: PowerPoint PPTX
+- Slide plan, speaker/demo notes and viva questions
+- User manual, developer guide, Windows setup guide and API overview
+- Mathematical foundation, data dictionary, test plan/results,
+  security/privacy notes, references and implementation status
+
+Before submitting
+1. Replace every [placeholder] in the report with your verified details.
+2. Confirm your institution's required certificate/declaration format.
+3. Run the application on your own computer and capture genuine screenshots.
+4. Import a genuine traffic CSV before reporting measured outcomes.
+5. Update the report with your actual dataset, test date and observed results.
+6. Review IMPLEMENTATION_STATUS.md. Do not describe incomplete items as complete.
+7. Open the PPTX and update name, register number, department and guide details.
+
+Important honesty note
+This package is a local academic development build. The default database is
+SQLite, not a preconfigured PostgreSQL server. Production authentication,
+Google Analytics 4 OAuth/synchronisation, production tracking aggregation,
+some advanced modelling and complete end-to-end browser verification are
+not complete. No mock visitor records or fabricated performance metrics are
+included. Do not claim those features or results in a submission.

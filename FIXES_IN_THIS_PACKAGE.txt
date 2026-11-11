@@ -1,0 +1,9 @@
+REPAIR NOTES
+- Rewrote SETUP_TRAFFIQ.bat to avoid nested parenthesised command blocks
+  that triggered the Windows CMD "... was unexpected at this time" error.
+- Rewrote START_TRAFFIQ.bat with explicit labels and error paths.
+- Setup preserves an existing backend/.env and only creates an empty SQLite
+  database configuration when no .env exists.
+- Startup checks ports, runs migrations, waits for the API health endpoint,
+  then launches the Vite frontend.
+- Existing report, documentation and PowerPoint files are retained.
